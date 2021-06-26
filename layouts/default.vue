@@ -1,12 +1,14 @@
 <template>
-  <div>
+<div class="header" :style="{background: 'radial-gradient(#FFF, ' + $store.state.primaryColor + ')'  }">
+  <div class="container">
     <Nuxt />
   </div>
+</div>
 </template>
 
 <style>
 html {
-  font-family:
+  font-family: 'Poppins', 
     'Source Sans Pro',
     -apple-system,
     BlinkMacSystemFont,
@@ -29,34 +31,28 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+a {
+    text-decoration: none;
+    color: #555;
+}
+p {
+    color: #555;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+.header {
+  min-height: 100vh;
+   /* min-height: 100%;  not necessary */
+    /* background: radial-gradient(#FFF, #FFD6D6); */
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
 </style>

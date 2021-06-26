@@ -1,15 +1,14 @@
 <template>
   <div>
     <NavBar></NavBar>
-    <Main></Main>
+    <Products/>
   </div>
 </template>
 
 <script>
-
 export default {
-    mounted(){
-    this.$store.commit('switchToHomeBackground')
+  mounted(){
+    this.$store.commit('switchToProductsBackground')
   }
 }
 </script>
